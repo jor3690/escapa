@@ -197,25 +197,71 @@
   </section>
 
 
-<section class="section" id="servicios">
-  <div class="section-inner">
-  <h2>¿Por qué trabajar con Escapa Homes?</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Más ingresos</h3>
-      <p>Optimización de precios y ocupación durante todo el año.</p>
+  <section class="section" id="servicios">
+    <div class="section-inner">
+  
+      <h2>¿Por qué trabajar con Escapa Homes?</h2>
+  
+      <div class="grid servicios-grid">
+  
+        <!-- CARD 1 -->
+        <div class="card service-card">
+          <div class="icon-wrap">
+            <svg class="icon-svg" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" fill="#F4EFE4"/>
+              <path d="M18 41L28 31L36 37L47 23" stroke="#1C2F4A" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M40 23H47V30" stroke="#C6A15B" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+  
+          <h3>Más ingresos</h3>
+  
+          <p>
+            No basta con estar publicado. Optimizamos precio,
+            ocupación y estrategia para competir de verdad.
+          </p>
+        </div>
+  
+        <!-- CARD 2 -->
+        <div class="card service-card">
+          <div class="icon-wrap">
+            <svg class="icon-svg" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" fill="#F4EFE4"/>
+              <path d="M32 18L44 23V32C44 40 38.8 46 32 48C25.2 46 20 40 20 32V23L32 18Z" stroke="#1C2F4A" stroke-width="3.2" stroke-linejoin="round"/>
+              <path d="M27 32L30.5 35.5L37.5 28.5" stroke="#C6A15B" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+  
+          <h3>Gestión 360</h3>
+  
+          <p>
+            Reservas, comunicación, incidencias, limpieza y
+            coordinación. Todo bajo control.
+          </p>
+        </div>
+  
+        <!-- CARD 3 -->
+        <div class="card service-card">
+          <div class="icon-wrap">
+            <svg class="icon-svg" viewBox="0 0 64 64" fill="none">
+              <circle cx="32" cy="32" r="30" fill="#F4EFE4"/>
+              <circle cx="28" cy="30" r="10" stroke="#1C2F4A" stroke-width="3"/>
+              <path d="M28 25V30L31.5 32.5" stroke="#1C2F4A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M41 36C45 33 49 34 50 39C45 43 40 42 37 38C38 37.2 39.3 36.5 41 36Z" fill="#C6A15B"/>
+            </svg>
+          </div>
+  
+          <h3>Menos desgaste, más resultado</h3>
+  
+          <p>
+            Su vivienda puede generar más ingresos sin consumir
+            su tiempo ni su energía.
+          </p>
+        </div>
+  
+      </div>
     </div>
-    <div class="card">
-      <h3>Gestión completa</h3>
-      <p>Nos encargamos de todo: huéspedes, limpieza y mantenimiento.</p>
-    </div>
-    <div class="card">
-      <h3>Sin complicaciones</h3>
-      <p>Tu vivienda genera ingresos sin que tengas que dedicarle tiempo.</p>
-    </div>
-  </div>
-  </div>
-</section>
+  </section>
 
 
 <section class="section" id="conocenos">
@@ -342,22 +388,154 @@
 </section>
 
 
-<section class="section" id="formulario">
+<!-- HTML -->
+<section class="section form-premium" id="formulario">
   <div class="section-inner">
-  <h2>Solicita información</h2>
-  <p style="text-align:center;margin-bottom:20px;">
-    Te contactaremos para valorar tu vivienda sin compromiso.
-  </p>
+    <h2>¿Hablamos?</h2>
 
-  <form style="max-width:500px;margin:auto;">
-    <input type="text" placeholder="Nombre" required style="width:100%;padding:10px;margin-bottom:10px;">
-    <input type="phone" placeholder="Teléfono" required style="width:100%;padding:10px;margin-bottom:10px;">
-    <input type="email" placeholder="Email" required style="width:100%;padding:10px;margin-bottom:10px;">
-    <input type="text" placeholder="Ubicación de la vivienda" style="width:100%;padding:10px;margin-bottom:10px;">
-    <button class="cta" style="width:100%;border:none;">Enviar</button>
-  </form>
+    <p class="form-phone">
+      <img src="/img/telf.png" alt="Teléfono">
+      650 36 03 77
+    </p>
+
+    <p class="form-intro">
+      Si quiere saber si su propiedad es adecuada, 
+      rellene el formulario o contacte directamente.
+    </p>
+
+    <!-- ESTADO FORMULARIO -->
+    <div id="formWrap">
+      <form
+        id="escapaForm"
+        action="https://submit.jotform.com/submit/261041259094050"
+        method="post"
+        class="premium-form"
+      >
+        <input type="hidden" name="formID" value="261041259094050">
+
+        <div class="form-grid">
+          <div class="field">
+            <label>Nombre</label>
+            <input
+              type="text"
+              name="q2_textbox0"
+              placeholder="Su nombre"
+              required
+            >
+          </div>
+
+          <div class="field">
+            <label>Teléfono</label>
+            <input
+              type="tel"
+              name="telefono"
+              placeholder="600 000 000"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="field">
+          <label>Email</label>
+          <input
+            type="email"
+            name="q4_email2"
+            placeholder="correo@email.com"
+            required
+          >
+        </div>
+
+        <div class="field">
+          <label>Ubicación de la vivienda</label>
+          <input
+            type="text"
+            name="q5_textbox3"
+            placeholder="Salou, Cambrils, Lleida..."
+          >
+        </div>
+
+        <div class="field">
+          <label>Cuénteme brevemente su caso</label>
+          <textarea
+            name="q6_textarea4"
+            rows="5"
+            placeholder="Tipo de vivienda, situación actual, dudas..."
+          ></textarea>
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="premium-btn" id="submitBtn">
+            Solicitar información
+          </button>
+        </div>
+
+        <p class="form-note">
+          Sin compromiso. Respuesta personalizada.
+        </p>
+      </form>
+    </div>
+
+    <!-- ESTADO SUCCESS -->
+    <div id="successBox" class="success-box" style="display:none;">
+      <div class="success-line">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20 6L9 17l-5-5"></path>
+          </svg>
+        </div>
+
+        <h3>Mensaje enviado correctamente</h3>
+      </div>
+
+      <p>
+        Gracias por contactar. Revisaremos su mensaje y le responderemos lo antes posible.
+      </p>
+
+      <button class="premium-btn secondary-btn" id="resetFormBtn">
+        Enviar otro mensaje
+      </button>
+    </div>
   </div>
 </section>
+
+<script>
+const form = document.getElementById("escapaForm");
+const formWrap = document.getElementById("formWrap");
+const successBox = document.getElementById("successBox");
+const submitBtn = document.getElementById("submitBtn");
+const resetBtn = document.getElementById("resetFormBtn");
+
+form.addEventListener("submit", async function(e){
+  e.preventDefault();
+
+  submitBtn.disabled = true;
+  submitBtn.textContent = "Enviando...";
+
+  const data = new FormData(form);
+
+  try{
+    await fetch(form.action, {
+      method: "POST",
+      body: data
+    });
+
+    form.reset();
+    formWrap.style.display = "none";
+    successBox.style.display = "block";
+
+  }catch(err){
+    alert("Ha ocurrido un error. Inténtelo de nuevo.");
+  }
+
+  submitBtn.disabled = false;
+  submitBtn.textContent = "Solicitar información";
+});
+
+resetBtn.addEventListener("click", function(){
+  successBox.style.display = "none";
+  formWrap.style.display = "block";
+});
+</script>
 
 <footer class="footer">
 
