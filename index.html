@@ -13,7 +13,7 @@
   <meta name="author" content="Escapa Homes">
   <meta name="theme-color" content="#1C2F4A">
   
-  <link rel="canonical" href="https://escapahomes.com/">
+  <link rel="canonical" href="https://www.escapahomes.com/">
   <link rel="icon" href="/favicon.png">
   <link rel="apple-touch-icon" href="/favicon.png">
   <link rel="stylesheet" href="/css/styles.css">
@@ -37,13 +37,13 @@
   <meta property="og:image:height" content="630">
   <meta property="og:image:alt" content="Escapa Homes - Gestión de alquiler vacacional en Costa Dorada">
   
-  <!-- TWITTER / X -->
+  <!-- X -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Escapa Homes | Gestión de alquiler vacacional">
   <meta name="twitter:description" content="Convierte tu vivienda en una fuente de ingresos optimizada en Costa Dorada.">
   <meta name="twitter:image" content="https://escapahomes.com/img/og-escapa.jpg">
   
-  <!-- KEYWORDS (secundario, no crítico) -->
+  <!-- KEYWORDS -->
   <meta name="keywords" content="gestión alquiler vacacional Salou, gestión Airbnb Salou, gestión apartamentos Cambrils, alquiler turístico Costa Dorada, property management Salou, gestor Airbnb Cambrils">
   
   <!-- SCHEMA JSON-LD -->
@@ -175,8 +175,8 @@
             <div class="property-meta">
               <span>6 huéspedes</span>
               <span>3 hab.</span>
-              <span>2 baños</span>
-              <span>180 m²</span>
+              <span>3 baños</span>
+              <span>160 m²</span>
             </div>
   
             <p class="property-location">Cambrils</p>
@@ -407,11 +407,11 @@
     <div id="formWrap">
       <form
         id="escapaForm"
-        action="https://submit.jotform.com/submit/261041259094050"
+        action="https://submit.jotform.com/submit/261051811632346"
         method="post"
         class="premium-form"
       >
-        <input type="hidden" name="formID" value="261041259094050">
+        <input type="hidden" name="formID" value="261051811632346">
 
         <div class="form-grid">
           <div class="field">
@@ -566,5 +566,20 @@ resetBtn.addEventListener("click", function(){
   </footer>
   
 <script src="/js/main.js"></script>
+<script>
+  const toggleBtn = document.querySelector('.menu-toggle');
+  const mobileMenu = document.querySelector('.mobile-menu');
+  
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('active');
+  });
+  
+  /* cerrar al pulsar un enlace */
+  document.querySelectorAll('.mobile-menu a').forEach(link => {
+    link.addEventListener('click', () => {
+      mobileMenu.classList.remove('active');
+    });
+  });
+  </script>
 </body>
 </html>
