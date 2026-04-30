@@ -185,7 +185,7 @@
   
             <ul class="property-list">
               <li>Zona tranquila</li>
-              <li>Exterior luminoso</li>
+              <li>Jacuzzi y Barbacoa</li>
               <li>Ideal familias</li>
             </ul>
   
@@ -635,7 +635,7 @@ resetBtn.addEventListener("click", function(){
       <h4>Extras</h4>
       <ul id="modalExtras"></ul>
   
-      <p class="modal-note">Pulsa fuera para cerrar*</p>
+      <p class="modal-note">Pulsa fuera o Esc para cerrar</p>
     </div>
   </div>
 
@@ -651,26 +651,40 @@ const modalExtras = document.getElementById("modalExtras");
 
 const viviendas = [
   {
-    title: "Residencial Costa Cambrils",
+    title: "Apartamento Premium",
     img: "img/vivienda1.jpg",
     description: `
-    
+    Apartamento en Salou situado en primera línea de playa, donde la terraza privada se convierte en el mirador principal hacia la playa de Levante. Con 85 m² y una reforma de estilo contemporáneo, la vivienda está configurada para alojar a 6 personas en un entorno donde la luz del Mediterráneo es la protagonista absoluta.
+
+    El interior se distribuye en tres dormitorios independientes y dos baños completos, facilitando la convivencia de grupos o familias. La zona de día integra el salón con las vistas exteriores, manteniendo un diseño de líneas limpias y funcionales que prioriza la sensación de amplitud y el confort térmico gracias al sistema de aire acondicionado.
+
+    La propiedad forma parte de un complejo con piscina comunitaria y, un valor diferencial clave en esta ubicación tan céntrica, incluye plaza de parking en el mismo edificio. Este detalle permite disfrutar de la oferta gastronómica y de ocio de Salou con la tranquilidad de tener el vehículo resguardado.
+
+    Es una opción diseñada para quienes buscan la máxima proximidad al mar sin renunciar a las comodidades de una vivienda moderna, espaciosa y conectada con los principales puntos de interés de la Costa Dorada.
     `,
-    extras: ["A minutos de PortAventura", "Espacioso", "Parking", "A/C"]
+    extras: ["Primera línea de playa", "Parking en el edificio", "Piscina comunitaria", "Aire acondicionado"]
   },
   {
-    title: "Residencial Costa Cambrils",
+    title: "Villa Costa Cambrils",
     img: "img/vivienda2.jpg",
-    description: "Aquí irá la descripción larga...",
-    extras: ["A minutos de PortAventura", "Espacioso", "Parking", "A/C"]
+    description: `
+    Villa en Cambrils que cuenta con 160 m² de superficie, diseñada para alojar a grupos de hasta 8 personas en un entorno privado y relajado. La propiedad destaca por su arquitectura de estilo mediterráneo, con estancias amplias y una gran luminosidad que conecta directamente el interior con el jardín privado.
+
+    Distribuida en tres dormitorios independientes, la vivienda dispone de tres baños completos, uno de ellos equipado con un jacuzzi privado. La zona de día es abierta y confortable, orientada hacia el exterior para facilitar la convivencia y el aprovechamiento de la luz natural en todas las estancias.
+
+    El jardín privado es el eje principal de la zona exterior, con una zona de barbacoa bajo la pérgola ideal para cenas al aire libre. Al estar situada en una zona residencial tranquila, el silencio y la privacidad son las características dominantes, lo que la convierte en una opción sólida para familias que buscan independencia.
+
+    Es una vivienda que combina la amplitud de una construcción independiente con detalles prácticos, situada a pocos minutos de la costa pero alejada del ruido de las zonas más transitadas.
+    `,
+    extras: ["Jacuzzi Privado", "Barbacoa y Pérgola", "160 m² - 3 Baños", "Zona Residencial"]
   },
   {
-    title: "Residencial Costa Cambrils",
+    title: "Apartamento Boutique",
     img: "img/vivienda3.jpg",
     description: `
     Disfruta de Salou en un apartamento diseñado para eliminar complicaciones. Un espacio luminoso y práctico donde cada detalle —desde la cama extra grande hasta el kit de playa— está pensado para que tu única tarea sea desconectar.
     
-    La zona principal se ha optimizado para ofrecer comodidad real tanto en estancias cortas como de larga duración. Cuenta con un salón equipado con aire acondicionado, fibra de alta velocidad y Smart TV para conectar tus cuentas de streaming. Desde aquí se accede a la terraza privada, el corazón del alojamiento, equipada con mesa y banco para disfrutar del clima de la Costa Dorada.
+    La zona principal se ha reformado para ofrecer la mayor comodidad tanto en estancias cortas como de larga duración. Cuenta con un salón equipado con aire acondicionado, fibra de alta velocidad y Smart TV para conectar tus cuentas de streaming. Desde aquí se accede a la terraza privada, el corazón del alojamiento, equipada con mesa y banco para disfrutar del clima de la Costa Dorada.
     
     La cocina, integrada y funcional, cuenta con placa de inducción, microondas, mini-horno y una cuidada selección de cafeteras (Nespresso e italiana). La barra moderna con taburetes es el espacio ideal para desayunos rápidos antes de salir a explorar.
     
@@ -680,14 +694,20 @@ const viviendas = [
     
     Su ubicación estratégica te permite moverte a pie entre la playa y la zona de restauración, situándote a solo unos minutos de PortAventura.
     `,
-    extras: ["Cama King Size 180cm", "Fibra Alta Velocidad", "Kit de Playa", "A/C"]
+    extras: ["Cama King Size 180cm", "Fibra Alta Velocidad", "Kit de Playa", "Ubicación Top"]
   },
   {
     title: "Residencial Costa Cambrils",
     img: "img/vivienda4.jpg",
-    description: "Aquí irá la descripción larga...",
+    description: `Apartamento en Tarragona que se define por su amplitud (95 m²) y una distribución que prioriza la comodidad de los grupos grandes. Presenta un diseño de líneas despejadas y tonos neutros, creando un ambiente luminoso y ordenado que facilita la estancia desde el primer momento.
+
+    La vivienda cuenta con tres dormitorios independientes y, un factor determinante para la logística de 6 personas, dos baños completos. El salón principal es diáfano, está equipado con aire acondicionado y ofrece el espacio suficiente para que todos los huéspedes convivan sin estrecheces.
+    
+    La cocina sigue una línea funcional, totalmente equipada para cubrir las necesidades del día a día. Además, el alojamiento incluye plaza de parking privada en el mismo edificio, un recurso de gran valor en una ubicación tan cercana a la costa y a pocos minutos de PortAventura.
+    
+    Es una opción diseñada para quienes buscan un interior cuidado, espacioso y práctico, donde la fluidez del espacio ayuda a que la estancia sea relajada, incluso viajando con un grupo numeroso.`,
     extras: ["A minutos de PortAventura", "Espacioso", "Parking", "A/C"]
-  },
+  }
 ];
 
 
@@ -719,15 +739,25 @@ document.querySelectorAll(".property-btn").forEach((btn, i) => {
 closeBtn.addEventListener("click", closeModal);
 
 modal.addEventListener("click", (e) => {
-  if(e.target === modal){
+  if (e.target === modal) {
     closeModal();
   }
 });
 
-function closeModal(){
+function closeModal() {
   modal.classList.remove("active");
   document.body.style.overflow = "";
 }
+
+document.addEventListener("keydown", (e) => {
+  if (
+    e.key === "Escape" &&
+    modal.classList.contains("active") &&
+    !["INPUT", "TEXTAREA"].includes(document.activeElement.tagName)
+  ) {
+    closeModal();
+  }
+});
 </script>
 
 <script src="/js/main.js"></script>
