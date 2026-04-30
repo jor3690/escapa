@@ -140,9 +140,62 @@
       <h2>Propiedades gestionadas</h2>
   
       <div class="propiedades-grid">
-  
+
+
         <article class="property-card">
           <img src="img/vivienda1.jpg" alt="Ático Premium">
+  
+          <div class="property-body">
+            <h3>Apartamento Premium</h3>
+  
+            <div class="property-meta">
+              <span>6 huéspedes</span>
+              <span>3 hab.</span>
+              <span>2 baño</span>
+              <span>85 m²</span>
+            </div>
+  
+            <p class="property-location">Salou</p>
+  
+            <ul class="property-list">
+              <li>Piscina comunitaria</li>
+              <li>Aire acondicionado</li>
+              <li>Parking en el edificio</li>
+            </ul>
+  
+            <a href="#" class="property-btn">Más info</a>
+          </div>
+        </article>
+
+
+        <article class="property-card">
+          <img src="img/vivienda2.jpg" alt="Ático Premium">
+  
+          <div class="property-body">
+            <h3>Villa Costa Cambrils</h3>
+  
+            <div class="property-meta">
+              <span>8 huéspedes</span>
+              <span>3 hab.</span>
+              <span>3 baños</span>
+              <span>160 m²</span>
+            </div>
+  
+            <p class="property-location">Cambrils</p>
+  
+            <ul class="property-list">
+              <li>Zona tranquila</li>
+              <li>Exterior luminoso</li>
+              <li>Ideal familias</li>
+            </ul>
+  
+            <a href="#" class="property-btn">Más info</a>
+          </div>
+        </article>
+
+  
+        <article class="property-card">
+          <img src="img/vivienda3.jpg" alt="Ático Premium">
   
           <div class="property-body">
             <h3>Apartamento Boutique</h3>
@@ -167,24 +220,24 @@
         </article>
   
         <article class="property-card">
-          <img src="img/vivienda2.jpg" alt="Casa Boutique">
+          <img src="img/vivienda4.jpg" alt="Casa Boutique">
   
           <div class="property-body">
-            <h3>Villa Costa Cambrils</h3>
+            <h3>Residencial Costa Cambrils</h3>
   
             <div class="property-meta">
               <span>6 huéspedes</span>
               <span>3 hab.</span>
-              <span>3 baños</span>
-              <span>160 m²</span>
+              <span>2 baños</span>
+              <span>95 m²</span>
             </div>
   
-            <p class="property-location">Cambrils</p>
+            <p class="property-location">Tarragona</p>
   
             <ul class="property-list">
-              <li>Zona tranquila</li>
-              <li>Exterior luminoso</li>
-              <li>Ideal familias</li>
+              <li>A minutos de Port Aventura</li>
+              <li>Espacioso y cómodo</li>
+              <li>Parking y A/C</li>
             </ul>
   
             <a href="#" class="property-btn">Más info</a>
@@ -498,6 +551,10 @@
   </div>
 </section>
 
+<a href="https://wa.me/34650360377" target="_blank" class="wh-fixed">
+  <img src="/img/logo-whatsapp.png" alt="WhatsApp" />
+</a>
+
 <script>
 const form = document.getElementById("escapaForm");
 const formWrap = document.getElementById("formWrap");
@@ -565,6 +622,114 @@ resetBtn.addEventListener("click", function(){
   
   </footer>
   
+  <div id="modalOverlay" class="modal-overlay">
+    <div class="modal-box" id="modalBox">
+      <button class="modal-close" id="modalClose">&times;</button>
+  
+      <h3 id="modalTitle"></h3>
+  
+      <img id="modalImg" src="" alt="">
+  
+      <p id="modalDesc"></p>
+  
+      <h4>Extras</h4>
+      <ul id="modalExtras"></ul>
+  
+      <p class="modal-note">Pulsa fuera para cerrar*</p>
+    </div>
+  </div>
+
+<script>
+const modal = document.getElementById("modalOverlay");
+const modalBox = document.getElementById("modalBox");
+const closeBtn = document.getElementById("modalClose");
+
+const modalTitle = document.getElementById("modalTitle");
+const modalImg = document.getElementById("modalImg");
+const modalDesc = document.getElementById("modalDesc");
+const modalExtras = document.getElementById("modalExtras");
+
+const viviendas = [
+  {
+    title: "Residencial Costa Cambrils",
+    img: "img/vivienda1.jpg",
+    description: `
+    
+    `,
+    extras: ["A minutos de PortAventura", "Espacioso", "Parking", "A/C"]
+  },
+  {
+    title: "Residencial Costa Cambrils",
+    img: "img/vivienda2.jpg",
+    description: "Aquí irá la descripción larga...",
+    extras: ["A minutos de PortAventura", "Espacioso", "Parking", "A/C"]
+  },
+  {
+    title: "Residencial Costa Cambrils",
+    img: "img/vivienda3.jpg",
+    description: `
+    Disfruta de Salou en un apartamento diseñado para eliminar complicaciones. Un espacio luminoso y práctico donde cada detalle —desde la cama extra grande hasta el kit de playa— está pensado para que tu única tarea sea desconectar.
+    
+    La zona principal se ha optimizado para ofrecer comodidad real tanto en estancias cortas como de larga duración. Cuenta con un salón equipado con aire acondicionado, fibra de alta velocidad y Smart TV para conectar tus cuentas de streaming. Desde aquí se accede a la terraza privada, el corazón del alojamiento, equipada con mesa y banco para disfrutar del clima de la Costa Dorada.
+    
+    La cocina, integrada y funcional, cuenta con placa de inducción, microondas, mini-horno y una cuidada selección de cafeteras (Nespresso e italiana). La barra moderna con taburetes es el espacio ideal para desayunos rápidos antes de salir a explorar.
+    
+    El dormitorio principal destaca por su cama King Size (180 cm), garantizando un descanso de calidad. Se complementa con detalles prácticos como caja fuerte, plancha y un gran armario. Para grupos o familias, el salón ofrece versatilidad mediante un sofá cama doble (150 cm) y una cama individual adicional.
+    
+    En el exterior, la experiencia se completa con acceso a las piscinas comunitarias (incluyendo zona infantil vallada), parque para niños y mesas de ping pong. Además, para facilitar tus días de sol, el apartamento incluye equipamiento de playa listo para usar (sombrilla, sillas y juguetes).
+    
+    Su ubicación estratégica te permite moverte a pie entre la playa y la zona de restauración, situándote a solo unos minutos de PortAventura.
+    `,
+    extras: ["Cama King Size 180cm", "Fibra Alta Velocidad", "Kit de Playa", "A/C"]
+  },
+  {
+    title: "Residencial Costa Cambrils",
+    img: "img/vivienda4.jpg",
+    description: "Aquí irá la descripción larga...",
+    extras: ["A minutos de PortAventura", "Espacioso", "Parking", "A/C"]
+  },
+];
+
+
+
+document.querySelectorAll(".property-btn").forEach((btn, i) => {
+  btn.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const data = viviendas[i];
+
+    // rellenar contenido
+    modalTitle.textContent = data.title;
+    modalImg.src = data.img;
+    modalDesc.textContent = data.description;
+
+    modalExtras.innerHTML = "";
+    data.extras.forEach(e => {
+      const li = document.createElement("li");
+      li.textContent = e;
+      modalExtras.appendChild(li);
+    });
+
+    // abrir modal
+    modal.classList.add("active");
+    document.body.style.overflow = "hidden";
+  });
+});
+
+closeBtn.addEventListener("click", closeModal);
+
+modal.addEventListener("click", (e) => {
+  if(e.target === modal){
+    closeModal();
+  }
+});
+
+function closeModal(){
+  modal.classList.remove("active");
+  document.body.style.overflow = "";
+}
+</script>
+
 <script src="/js/main.js"></script>
 <script>
   const toggleBtn = document.querySelector('.menu-toggle');
